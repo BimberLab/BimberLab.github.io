@@ -1,2 +1,2 @@
-# BimberLab.github.io
+# Bimber Lab Website
 Bimber Lab Site
