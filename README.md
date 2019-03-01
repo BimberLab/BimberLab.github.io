@@ -10,23 +10,27 @@ While we are primarily an infectious disease lab, creating software to analyze a
 
 ## LabKey Modules
 
-We heavily use [LabKey Server](https://www.labkey.org) for a range of tasks, including basic lab data and sample management (Laboratory module), management and analysis of sequence data (SequenceAnalysis module), and more:
+We heavily use [LabKey Server](https://www.labkey.org) for a range of tasks, including basic lab functions (data and sample management), as well as management and analysis of most of our sequence data.  Our modules fall into several categories:
 
-- Laboratory: this is the base module for our lab data management.  It can be used for basic data and experiment management (vaguely like an Electronic Lab Notebook).
+- Laboratory Module: this is the base module for our lab data management and the core of our operations.  It can be used for basic data and experiment management (vaguely like an Electronic Lab Notebook). It is in use beyond our group.
 
-- SequenceAnalysis: This module is the core of how we manage sequence data. It allows central management of raw data, analysis products, and resources (genomes, gene annotations, etc.). 
+- SequenceAnalysis: This module is the core of our sequence data management and analysis. It allows central management of raw data, analysis products, and resources (genomes, gene annotations, etc.).  Related modules allow integration with BLAST, the open source web-based genome browser [JBrowse](https://jbrowse.org/), and our cluster module enables submission of LabKey jobs to either slurm or HTCondor clusters.
 
-  - Blast: This allows users to create custom BLAST databases and submit BLAST searches through LabKey. 
-
-  - JBrowse: This module bundles [JBrowse](https://jbrowse.org/), an open source web-based genome browser, to allow users to create custom genome browser sessions to view data managed in LabKey.
-
-- Cluster: This module allows LabKey pipeline jobs to be submitted to HTCondor or Slurm clusters. 
-
-- OmeroIntegration: This is a functional, although primarily proof-of-concept, module to demonstrate how LabKey Server can interact with Omero, an open-source platform to manage images. If the LabKey Server stores the IDs of images in Omero, it can render thumbnails in a LabKey grid, and open the Omero image viewer inline to inspect these images.
-
-- OpenLdapSync: This is a standalone module that allows a LabKey Server instance to automatically sync user and/groups with an LDAP Server. LabKey offer a premium (not free or open source) feature to sync groups. This feature was actually created in 2018 by cloning our code.
+- Other notable modules: 
+    - OpenLdapSync: This is a standalone module that allows a LabKey Server instance to automatically sync user and/groups with an LDAP Server. LabKey offers a [premium (not free or open source) feature to sync groups](https://www.labkey.org/Documentation/wiki-page.view?name=LDAP_sync). This feature was actually created in 2018 by cloning our code.
 
 
 ## R Packages
 
 Coming Soon.
+
+## External Contributions
+
+Lab members have contributed to the following projects:
+
+- [GATK3](https://github.com/broadgsa/gatk-protected) and [GATK4](https://github.com/broadinstitute/gatk)
+- [Picard Tools](https://github.com/broadinstitute/picard)
+- [HTSJDK](https://github.com/samtools/htsjdk)
+- [LabKey Server](https://www.labkey.org/home/project-begin.view?)
+
+
