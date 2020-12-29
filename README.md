@@ -22,7 +22,7 @@ We heavily use [LabKey Server](https://www.labkey.org) for a range of tasks, inc
 
 ## R Packages
 
-Coming Soon.
+- [cellhashR](https://bimberlab.github.io/cellhashR/) is an R package designed to work with cell hashing and CITE-seq data. It can be used for QC of the raw data, as well as generation of cell hashing calls.
 
 ## External Contributions
 
