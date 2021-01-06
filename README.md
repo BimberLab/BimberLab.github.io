@@ -12,9 +12,9 @@ While we are primarily an infectious disease lab, creating software to analyze a
 
 We heavily use [LabKey Server](https://www.labkey.org) for a range of tasks, including basic lab functions (data and sample management), as well as management and analysis of most of our sequence data.  Our modules fall into several categories:
 
-- Laboratory Module: this is the base module for our lab data management and the core of our operations.  It can be used for basic data and experiment management (vaguely like an Electronic Lab Notebook). It is in use beyond our group.
+- [Laboratory Module](https://bimberlab.github.io/DiscvrLabKeyModules/discvr/overview.html): this is the base module for our lab data management and the core of our operations.  It can be used for basic data and experiment management (vaguely like an Electronic Lab Notebook). It is in use beyond our group.
 
-- SequenceAnalysis: This module is the core of our sequence data management and analysis. It allows central management of raw data, analysis products, and resources (genomes, gene annotations, etc.).  Related modules allow integration with BLAST, the open source web-based genome browser [JBrowse](https://jbrowse.org/), and our cluster module enables submission of LabKey jobs to either slurm or HTCondor clusters.
+- [SequenceAnalysis](https://bimberlab.github.io/DiscvrLabKeyModules/discvr-seq/overview.html): This module is the core of our sequence data management and analysis. It allows central management of raw data, analysis products, and resources (genomes, gene annotations, etc.).  Related modules allow integration with BLAST, the open source web-based genome browser [JBrowse](https://jbrowse.org/), and our cluster module enables submission of LabKey jobs to either slurm or HTCondor clusters.
 
 - Other notable modules: 
     - OpenLdapSync: This is a standalone module that allows a LabKey Server instance to automatically sync user and/groups with an LDAP Server. LabKey offers a [premium (not free or open source) feature to sync groups](https://www.labkey.org/Documentation/wiki-page.view?name=LDAP_sync). This feature was actually created in 2018 by cloning our code.
