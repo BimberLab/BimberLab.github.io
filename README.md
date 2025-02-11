@@ -22,8 +22,9 @@ We heavily use [LabKey Server](https://www.labkey.org) for a range of tasks, inc
 
 ## R Packages
 
-- [cellhashR](https://bimberlab.github.io/cellhashR/) is an R package designed to work with cell hashing and CITE-seq data. It can be used for QC of the raw data, as well as generation of cell hashing calls.
-- [geneSetViz](https://github.com/BimberLab/geneSetVis) is a R package / Shiny application designed to help interpret set of genes, such as those obtained from RNA-seq experiments. It allows the user to query a given set of genes against many reference sets and pathway tools from a single portal.
+- [cellhashR](https://bimberlab.github.io/cellhashR/): This is an R package designed to work with cell hashing and CITE-seq data. It can be used for QC of the raw data, as well as generation of cell hashing calls.
+- [RIRA](https://bimberlab.github.io/RIRA/): The Rhesus Immunome Reference Atlas (RIRA) is a multi-tissue single-cell reference atlas. The RIRA R package contains helpers to download the raw data, along with functions to assist with scoring of immune cell type and state.
+- [geneSetViz](https://github.com/BimberLab/geneSetVis): This is a R package / Shiny application designed to help interpret set of genes, such as those obtained from RNA-seq experiments. It allows the user to query a given set of genes against many reference sets and pathway tools from a single portal.
 
 ## External Contributions
 
