@@ -7,7 +7,16 @@ While we are primarily an infectious disease lab, creating software to analyze a
 
 [DISCVR-seq Toolkit](https://bimberlab.github.io/DISCVRSeq/) is a suite of tools written using the GATK4 engine. Many of our sequence and variant analysis tools are writen into this toolkit. These tools include [VariantQC](https://bimberlab.github.io/DISCVRSeq/toolDoc/com_github_discvrseq_walkers_variantqc_VariantQC.html), which can be used to create HTML summary reports from VCF files.  
 
+## R Packages
 
+- [cellhashR](https://bimberlab.github.io/cellhashR/): This is an R package designed to work with cell hashing and CITE-seq data. It can be used for QC of the raw data, as well as generation of cell hashing calls.
+- [RIRA](https://bimberlab.github.io/RIRA/): The Rhesus Immunome Reference Atlas (RIRA) is a multi-tissue single-cell reference atlas. The RIRA R package contains helpers to download the raw data, along with functions to assist with scoring of immune cell type and state.
+- [geneSetViz](https://github.com/BimberLab/geneSetVis): This is a R package / Shiny application designed to help interpret set of genes, such as those obtained from RNA-seq experiments. It allows the user to query a given set of genes against many reference sets and pathway tools from a single portal.
+
+## Other scRNA-seq Tools
+
+- [Nimble](https://github.com/BimberLab/nimble/) is a standalone alignment tool designed to complement standard scRNA-seq processing tools, such as cellranger. It aligns input data against custom/supplementary reference libraries, such as a viral genome or complex regions like the MHC or KIR. It can score features on that reference using different scoring thresholds than the genome as a whole, which enables genotyping of complex loci like HLA/MHC. 
+  
 ## LabKey Modules
 
 We heavily use [LabKey Server](https://www.labkey.org) for a range of tasks, including basic lab functions (data and sample management), as well as management and analysis of most of our sequence data.  Our modules fall into several categories:
@@ -18,13 +27,6 @@ We heavily use [LabKey Server](https://www.labkey.org) for a range of tasks, inc
 
 - Other notable modules: 
     - OpenLdapSync: This is a standalone module that allows a LabKey Server instance to automatically sync user and/groups with an LDAP Server. LabKey offers a [premium (not free or open source) feature to sync groups](https://www.labkey.org/Documentation/wiki-page.view?name=LDAP_sync). This feature was actually created in 2018 by cloning our code.
-
-
-## R Packages
-
-- [cellhashR](https://bimberlab.github.io/cellhashR/): This is an R package designed to work with cell hashing and CITE-seq data. It can be used for QC of the raw data, as well as generation of cell hashing calls.
-- [RIRA](https://bimberlab.github.io/RIRA/): The Rhesus Immunome Reference Atlas (RIRA) is a multi-tissue single-cell reference atlas. The RIRA R package contains helpers to download the raw data, along with functions to assist with scoring of immune cell type and state.
-- [geneSetViz](https://github.com/BimberLab/geneSetVis): This is a R package / Shiny application designed to help interpret set of genes, such as those obtained from RNA-seq experiments. It allows the user to query a given set of genes against many reference sets and pathway tools from a single portal.
 
 ## External Contributions
 
